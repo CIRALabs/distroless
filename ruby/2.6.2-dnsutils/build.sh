@@ -2,6 +2,9 @@
 
 set -ex
 
+IMAGE_NAME="mcr314/distroless-ruby"
+REGISTRY="docker.io"
+
 while getopts ":i:r:t:" o; do
     case "${o}" in
         i)
